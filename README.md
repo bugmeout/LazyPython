@@ -3,7 +3,7 @@ Hello,Python World.
 This is a lazy way to study Python.
 All the files are the SourceCode in Python lab Web.
 The web Reffered is "http://sebug.net/paper/books/LearnPythonTheHardWay/index.html"
-=======
+
 second test for commit -a  paramater.
 ========
-系统工作目录在master下，不知道能不能向另外的一个branch提交呢。
+系统锟斤拷锟斤拷目录锟斤拷master锟铰ｏ拷锟斤拷知锟斤拷锟杰诧拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷一锟斤拷branch锟结交锟截★拷
