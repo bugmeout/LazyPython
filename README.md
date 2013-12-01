@@ -6,4 +6,4 @@ The web Reffered is "http://sebug.net/paper/books/LearnPythonTheHardWay/index.ht
 
 second test for commit -a  paramater.
 ========
-ϵͳ����Ŀ¼��master�£���֪���ܲ�����������һ��branch�ύ�ء�
+系统工作目录在master下，不知道能不能向另外的一个branch提交呢。
