@@ -5,6 +5,5 @@ All the files are the SourceCode in Python lab Web.
 The web Reffered is "http://sebug.net/paper/books/LearnPythonTheHardWay/index.html"
 
 second test for commit -a  paramater.
-
-¼´Ê¹´´½¨·ÖÖ§£¬Ã»ÓĞ¶ÔÎÄ¼şĞŞ¸Ä£¬ÕÕÑù²»ÄÜgit.Ö»ÓĞËùÓĞ·ÖÖ§ÉÏµÄÄÚÈİ¶¼²»Ò»Ñù£¬²Å¿ÉÒÔgit·ÖÖ§¡£ÒòÎª·ÖÖ§branchµÄÄ¿µÄÊÇ×îºóµÄºÏ²¢¡£
-
+========
+ç³»ç»Ÿå·¥ä½œç›®å½•åœ¨masterä¸‹ï¼Œä¸çŸ¥é“èƒ½ä¸èƒ½å‘å¦å¤–çš„ä¸€ä¸ªbranchæäº¤å‘¢ã€‚
