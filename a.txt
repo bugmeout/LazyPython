@@ -1,0 +1,4 @@
+hello,python.
+You got it.
+注意，你已经设置了python后缀名的默认打开方法，所以不再需要在命令前输入python
+2.powershell的感觉和linux很像，因此，需要输入文件的全路径，一般都是.\name.extension.
