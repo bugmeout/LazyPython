@@ -1,0 +1,151 @@
+PS D:\GitHub\LazyPython> python -m pydoc collections
+Help on module collections:
+
+NAME
+    collections
+
+FILE
+    d:\environment\python\lib\collections.py
+
+CLASSES
+    __builtin__.dict(__builtin__.object)
+        Counter
+        OrderedDict
+        defaultdict
+    __builtin__.object
+        _abcoll.Callable
+        _abcoll.Container
+        _abcoll.Hashable
+        _abcoll.Iterable
+            _abcoll.Iterator
+        _abcoll.Sized
+            _abcoll.Mapping(_abcoll.Sized, _abcoll.Iterable, _abcoll.Container)
+                _abcoll.MutableMapping
+            _abcoll.MappingView
+                _abcoll.ItemsView(_abcoll.MappingView, _abcoll.Set)
+                _abcoll.KeysView(_abcoll.MappingView, _abcoll.Set)
+                _abcoll.ValuesView
+            _abcoll.Sequence(_abcoll.Sized, _abcoll.Iterable, _abcoll.Container)
+                _abcoll.MutableSequence
+            _abcoll.Set(_abcoll.Sized, _abcoll.Iterable, _abcoll.Container)
+                _abcoll.MutableSet
+        deque
+
+    class Callable(__builtin__.object)
+     |  Methods defined here:
+     |
+     |  __call__(self, *args, **kwds)
+     |
+     |  ----------------------------------------------------------------------
+     |  Class methods defined here:
+     |
+     |  __subclasshook__(cls, C) from abc.ABCMeta
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |
+     |  __abstractmethods__ = frozenset(['__call__'])
+     |
+     |  __metaclass__ = <class 'abc.ABCMeta'>
+     |      Metaclass for defining Abstract Base Classes (ABCs).
+     |
+     |      Use this metaclass to create an ABC.  An ABC can be subclassed
+     |      directly, and then acts as a mix-in class.  You can also register
+     |      unrelated concrete classes (even built-in classes) and unrelated
+     |      ABCs as 'virtual subclasses' -- these and their descendants will
+     |      be considered subclasses of the registering ABC by the built-in
+     |      issubclass() function, but the registering ABC won't show up in
+     |      their MRO (Method Resolution Order) nor will method
+     |      implementations defined by the registering ABC be callable (not
+     |      even via super()).
+
+    class Container(__builtin__.object)
+     |  Methods defined here:
+     |
+     |  __contains__(self, x)
+     |
+     |  ----------------------------------------------------------------------
+     |  Class methods defined here:
+     |
+     |  __subclasshook__(cls, C) from abc.ABCMeta
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |
+     |  __abstractmethods__ = frozenset(['__contains__'])
+     |
+     |  __metaclass__ = <class 'abc.ABCMeta'>
+     |      Metaclass for defining Abstract Base Classes (ABCs).
+     |
+     |      Use this metaclass to create an ABC.  An ABC can be subclassed
+     |      directly, and then acts as a mix-in class.  You can also register
+     |      unrelated concrete classes (even built-in classes) and unrelated
+     |      ABCs as 'virtual subclasses' -- these and their descendants will
+     |      be considered subclasses of the registering ABC by the built-in
+     |      issubclass() function, but the registering ABC won't show up in
+     |      their MRO (Method Resolution Order) nor will method
+     |      implementations defined by the registering ABC be callable (not
+     |      even via super()).
+
+    class Counter(__builtin__.dict)
+     |  Dict subclass for counting hashable items.  Sometimes called a bag
+     |  or multiset.  Elements are stored as dictionary keys and their counts
+     |  are stored as dictionary values.
+     |
+     |  >>> c = Counter('abcdeabcdabcaba')  # count elements from a string
+     |
+     |  >>> c.most_common(3)                # three most common elements
+     |  [('a', 5), ('b', 4), ('c', 3)]
+     |  >>> sorted(c)                       # list all unique elements
+     |  ['a', 'b', 'c', 'd', 'e']
+     |  >>> ''.join(sorted(c.elements()))   # list elements with repetitions
+     |  'aaaaabbbbcccdde'
+     |  >>> sum(c.values())                 # total of all counts
+     |  15
+     |
+     |  >>> c['a']                          # count of letter 'a'
+     |  5
+
+PS D:\GitHub\LazyPython>
+PS D:\GitHub\LazyPython> python
+Python 2.7.2 (default, Jun 12 2011, 15:08:59) [MSC v.1500 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from collections import Counter
+>>> c = Counter ("Yesdfatkasdf;jkasjfklasjdf;alsdfjk;lasdfj;l")
+>>> c
+Counter({'a': 6, 'f': 6, 's': 6, 'd': 5, 'j': 5, 'k': 4, 'l': 4, ';': 4, 'e': 1, 't': 1, 'Y': 1}
+>>> c.value
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Counter' object has no attribute 'value'
+>>> c.values
+<built-in method values of Counter object at 0x01D036B8>
+>>> c.values()
+[6, 1, 5, 6, 4, 5, 4, 6, 1, 1, 4]
+>>> sum(c.values())
+43
+>>> len("Yesdfatkasdf;jkasjfklasjdf;alsdfjk;lasdfj;l")
+43
+>>> c.most_common(sum(c.values()))
+[('a', 6), ('f', 6), ('s', 6), ('d', 5), ('j', 5), ('k', 4), ('l', 4), (';', 4), ('e', 1), ('t',
+>>> len(c.values())
+11
+>>>
