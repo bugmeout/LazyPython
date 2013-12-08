@@ -49,4 +49,5 @@ crouse = Salmon()
 
 harry = Halibut()
 
+#终于想起来了，对象和实例是一个意思。
 	
