@@ -1,5 +1,6 @@
 import web
 urls = ('/', 'index','/test','test','/good','good')
+#注意python元组的对应关系
 
  
 app = web.application(urls,globals())
