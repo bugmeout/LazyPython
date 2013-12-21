@@ -1,0 +1,14 @@
+[1mdiff --git a/ex50/gothonweb/templates/foo.html b/ex50/gothonweb/templates/foo.html[m
+[1mindex d40b7d6..b9d292e 100644[m
+[1m--- a/ex50/gothonweb/templates/foo.html[m
+[1m+++ b/ex50/gothonweb/templates/foo.html[m
+[36m@@ -9,8 +9,7 @@[m [m$def with (fool,greeting)[m
+ <!-- if fool : that means if fool is NOT NULL -->[m
+ [m
+ $if fool == "I am fool":[m
+[31m-	[m
+[31m-	<em style ="color:red; font-size:2em">hello wang </br>$greeting</em>[m
+[32m+[m	[32m<em style ="color:red; font-size:2em">hello wang <br/>$greeting</em>[m
+ $else:[m
+ 	hello,test.[m
+ 	$fool[m
