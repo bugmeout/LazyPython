@@ -56,7 +56,8 @@ class another:
 		# if 'test' in str 是说字典str中有没有test属性，其实就是问str中有没有以test作为索引的key。
 		#dictionary .........[index][key].......
 		#http://localhost:1234/another?tes=me&test=wahah
-		if 'test' in str:
+		if 'test' in str and not (str['test'] is None):
+		#	http://localhost:8080/another?test= 如果没有andNOT这句话，访问这里会报错
 		#if str.has_key('test'):
 			return render2.index(str.test)
 		else:
