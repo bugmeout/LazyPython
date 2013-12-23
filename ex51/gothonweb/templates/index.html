@@ -1,16 +1,8 @@
 $def with(greeting)
-<!--greeting is a paramter-->
- <html>
- 	<head>
- 		<title>test greeting</title>
- 	</head>
- 	<body>
-	
+<!--在layout文件和index文件中同时添加注释会出错-->
+<!--有意思的是，当用s:content和scontent效果还不一样-->
+<!--其中加冒号是html编码 ，另一个是url编码，html直接当做文本输出，不会管控制字符,可以说s:表示标签化，或者转意的意思-->
 	$if greeting:
 		I just wanted to say <em style= "color:red; font-size:2em">$greeting</em>
 	$else:
 		<em>Hello</em>,world!
-	
-	
-	</body>
- </html>
